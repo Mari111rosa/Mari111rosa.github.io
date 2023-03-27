@@ -1,0 +1,17 @@
+#main {
+    background-color: lightblue;
+    padding: 30px 
+}
+#content {
+    background-color: #627bec;
+    border: 5px solid blue;
+    color: white;
+    margin: 20px 0px;
+    padding: 20px;
+}
+#content > div {
+    margin: 16px 0px;
+}
+#quote {
+    padding-left: 36px;
+}
