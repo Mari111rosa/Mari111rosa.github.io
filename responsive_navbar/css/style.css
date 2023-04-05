@@ -23,6 +23,9 @@ li a {
 #home {
     margin-right: auto;
 }
+#home img {
+    width: 100px;
+}
 .dropdown_container {
     position: relative;
 }
