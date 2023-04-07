@@ -153,7 +153,7 @@ li a {
     clear: both;
     display: table;
     position: relative;
-    transform: translate(0%, -900%);
+    transform: translate(0%, -1520%);
 
 }
 #pinball_list {
@@ -162,20 +162,34 @@ li a {
     font-family: futura;
     display: table;
     position: relative;
-    transform: translate(-80%, -170%);
+    transform: translate(0%, -100);
     
 }
 .consoles {
     font-size: 40px;
     font-family: highest praise;
     float: right;
-    width: 33%;
+    width: 33.33%;
+    clear: both;
+    display: table;
+    position: relative;
+    transform: translate(0%, -2100%);
 }
 #consoles_list {
     display: inline-block;
     font-size: 15px; 
     font-family: futura;
     width: 33%;
+    display: table;
+    position: relative;
+    transform: translate(100%, -190%);
+}
+.row {
+    display: flex;
+}
+.row img {
+    width: 40%;
+    height: 500px;
 }
 footer {
     background-color: black;
