@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: black;
 }
 nav {
     background-color: black;
@@ -30,7 +31,7 @@ li a {
     position: relative;
 }
 .dropdown_menu {
-    background-color: black;
+    background-color: rgb(154, 82, 160);
     position: absolute;
     flex-direction: column;
     width: 100%;
@@ -39,7 +40,7 @@ li a {
     opacity: 0%;
     visibility: hidden;
     transition: 
-        opacity 0.05s,
+        opacity: 100,
         visibility 0.05s,
         top 0.05s;
 }
@@ -50,7 +51,6 @@ li a {
 }
 .home_container {
     width: 100%;
-    height: 300px;
     text-align: center;
 }
 .home_container img {
@@ -62,9 +62,6 @@ li a {
 }
 #home_events {
     position: relative;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, 110%);
     font-family: highest praise;
     background-color: black;
     text-align: center;
@@ -95,7 +92,6 @@ li a {
 }
 #content {
     position: relative;
-    transform: translate(0%, 80%);
     text-align: center;
     margin: 0px, 0px;
     padding: 20px;
@@ -111,93 +107,120 @@ li a {
 .arcade_container {
    color: rgb(104, 202, 215);
    position: relative;
-    transform: translate(0%, 80%);
     text-align: center;
-    margin: 0px, 0px;
+    margin: 0px auto;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+}
+.arcade_container ul {
+    display: flex;
+    flex-direction: column;
 }
 #arcade {
     position: relative;
-    transform: translate(0%, -580%);
     text-align: center;
-    margin: 0px, 0px;
+    margin: 0px 0px;
     padding: 20px;
     background-color: rgb(154, 82, 160);
     font-family: highest praise; 
     color: rgb(104, 202, 215);
-    font-size: 40px;
+    font-size: 50px;
 }
 .arcade_list {
     font-size: 40px;
     font-family: highest praise;
-    float: left;
-    width: 33.33%;
-    display: table;
-    clear: both;
     position: relative;
-    transform: translate(0%, -800%);
 }
 #arcade_games {
     font-size: 15px; 
     font-family: futura;
-    float: left;
-    width: 33.33%;
-    display: table;
-    clear: both;
     position: relative;
-    transform: translate(0%, -130%);
 }
 .pinball {
     font-size: 40px;
     font-family: highest praise;
-    width: 100%;
-    clear: both;
-    display: table;
     position: relative;
-    transform: translate(0%, -1520%);
 
 }
 #pinball_list {
-    display: inline-block;
     font-size: 15px; 
     font-family: futura;
-    display: table;
     position: relative;
-    transform: translate(0%, -100);
     
 }
 .consoles {
     font-size: 40px;
     font-family: highest praise;
-    float: right;
-    width: 33.33%;
-    clear: both;
-    display: table;
     position: relative;
-    transform: translate(0%, -2100%);
 }
 #consoles_list {
-    display: inline-block;
     font-size: 15px; 
     font-family: futura;
-    width: 33%;
-    display: table;
     position: relative;
-    transform: translate(100%, -190%);
 }
 .row {
     display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+.image_container {
+    flex: 1;
 }
 .row img {
-    width: 40%;
-    height: 500px;
+    width: 100%;
 }
-footer {
-    background-color: black;
-    padding: 20px;
+.footer_container {
     color: rgb(104, 202, 215);
-    text-align: center;
     position: relative;
-    transform: translate(0%, 200%);
     text-align: center;
-    margin: 0px, 0px;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: futura;
+    background-color: rgb(154, 82, 160);
+}
+.footer_container ul {
+    display: flex;
+    flex-direction: row;
+}
+.hours {
+    font-size: 30px;
+    font-family: highest praise;
+    position: relative;
+}
+#footer_hours {
+    color: black;
+}
+.contact {
+    font-size: 30px;
+    font-family: highest praise;
+    position: relative;
+}
+#contact_list {
+    color: black;
+    margin-right: 50px; 
+}
+.connect {
+    font-size: 30px;
+    font-family: highest praise;
+    position: relative;
+}
+.icons {
+    display: flex;
+    position: relative;
+}
+#icons i {
+    margin-right: 100px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery img {
+    box-sizing: border-box;
+    width: 33.33%; 
+    margin: 0px auto;
+    padding: 30px;
 }
