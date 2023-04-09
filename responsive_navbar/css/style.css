@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
     margin: 0px;
     background-color: black;
@@ -62,7 +63,6 @@ li a {
 }
 #home_events {
     position: relative;
-    font-family: highest praise;
     background-color: black;
     text-align: center;
     margin: 0px, 0px;
@@ -70,16 +70,17 @@ li a {
 }
 #events_heading {
     color: rgb(104, 202, 215);
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
 }
 #centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 59px;
-    font-family: highest praise; 
-    color:rgb(154, 82, 160)
+    font-size: 40px;
+    color:rgb(154, 82, 160);
+    font-family: 'Press Start 2P', cursive;
 }
 #centered_bottom {
     position: absolute;
@@ -101,8 +102,8 @@ li a {
 }
 #middle_heading {
     color: black;
-    font-family: highest praise;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
 }
 .arcade_container {
    color: rgb(104, 202, 215);
@@ -120,16 +121,16 @@ li a {
 #arcade {
     position: relative;
     text-align: center;
-    margin: 0px 0px;
-    padding: 20px;
-    background-color: rgb(154, 82, 160);
-    font-family: highest praise; 
+    margin: 30px 0px;
+    padding: 40px;
     color: rgb(104, 202, 215);
-    font-size: 50px;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
 }
 .arcade_list {
-    font-size: 40px;
-    font-family: highest praise;
+    font-size: 20px;
+    color: rgb(154, 82, 160);
+    font-family: 'Press Start 2P', cursive;
     position: relative;
 }
 #arcade_games {
@@ -138,8 +139,9 @@ li a {
     position: relative;
 }
 .pinball {
-    font-size: 40px;
-    font-family: highest praise;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(154, 82, 160);
     position: relative;
 
 }
@@ -150,8 +152,9 @@ li a {
     
 }
 .consoles {
-    font-size: 40px;
-    font-family: highest praise;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(154, 82, 160);
     position: relative;
 }
 #consoles_list {
@@ -186,16 +189,16 @@ li a {
     flex-direction: row;
 }
 .hours {
-    font-size: 30px;
-    font-family: highest praise;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
     position: relative;
 }
 #footer_hours {
     color: black;
 }
 .contact {
-    font-size: 30px;
-    font-family: highest praise;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
     position: relative;
 }
 #contact_list {
@@ -204,7 +207,6 @@ li a {
 }
 .connect {
     font-size: 30px;
-    font-family: highest praise;
     position: relative;
 }
 .icons {
