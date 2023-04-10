@@ -124,7 +124,7 @@ li a {
     margin: 30px 0px;
     padding: 40px;
     color: rgb(104, 202, 215);
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Press Start 2P', cursive;
 }
 .arcade_list {
@@ -224,5 +224,28 @@ li a {
     box-sizing: border-box;
     width: 33.33%; 
     margin: 0px auto;
-    padding: 30px;
+    padding: 10px;
+}
+#aboutus {
+    position: relative;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 40px;
+    color: rgb(104, 202, 215);
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+}
+#aboutus_content {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    color: rgb(154, 82, 160);
+    font-size: 25px; 
+    font-family: futura;
+}
+@media screen and (min-width: 1280px) {
+    #tablet,
+    #mobile {
+        display: none;
+    }
 }
