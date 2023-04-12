@@ -262,7 +262,7 @@ footer ul {
     flex-wrap: wrap;
 }
 #gallery_6 img {
-    height: 200px;
+    height: 400px;
     margin: 10px;
     flex: 1 0 auto;
     object-fit: cover;
