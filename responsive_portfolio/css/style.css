@@ -183,9 +183,11 @@ footer ul {
 .card a:hover {
     transform: scale (1.1);
 }
+#three_cards, 
 #two_cards {
     display: flex;
 }
+
 .card {
     border: 2px solid rgb(22, 137, 225);
     color: rgb(22, 137, 225);
@@ -195,6 +197,11 @@ footer ul {
     box-shadow: 4px 4px 8px 0px;
     flex: 1;
     flex-direction: column;
+}
+.card p {
+    font-size: 18px;
+    flex: 1;
+    margin-top: 0px;
 }
 /****************************************************************************
   Card styles
