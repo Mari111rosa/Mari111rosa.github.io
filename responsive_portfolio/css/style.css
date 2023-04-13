@@ -212,6 +212,7 @@ footer ul {
 ****************************************************************************/
 #gallery_container {
     text-align: center;
+    padding-top: 30px;
 }
 #gallery_1 {
     display: grid;
@@ -266,6 +267,11 @@ footer ul {
     margin: 10px;
     flex: 1 0 auto;
     object-fit: cover;
+}
+.carousel-inner {
+    height: 500px;
+    padding: 15px;
+    padding-bottom: 40px;
 }
 /****************************************************************************
   Media Query - Mobile Breakpoint
