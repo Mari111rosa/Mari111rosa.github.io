@@ -1,5 +1,6 @@
 /* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*****************************************************************************
   Heading, Link, and Misc. Styles
@@ -16,21 +17,22 @@ h1,
 h2,
 h3,
 a {
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-
 h4,
 p {
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Lobster', cursive;
 }
-
+h1 img {
+    width: 200px
+}
 h1 {
     font-size: 60px;
     margin-bottom: 0;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 4px;
 }
 
@@ -41,7 +43,7 @@ a {
 nav,
 nav a,
 footer a {
-    color: rgb(22, 137, 225);
+    color: #E1A177;
 }
 
 nav a:hover,
@@ -93,9 +95,12 @@ footer {
 nav {
     align-items: center;
     display: flex;
-    margin: 0 24px;
+    padding: 0 24px;
+    background-color: black;
 }
-
+nav img {
+    width: 150px;
+}
 footer {
     display: flex;
     justify-content: center;
@@ -123,12 +128,13 @@ nav .social_media {
 
 .social_media i {
     font-size: 20px;
+    color: #E1A177;
 }
 
 nav,
 nav a,
 footer a {
-    color: rgb(22, 137, 225); 
+   color: #E1A177;
 }
 
 nav a:hover,
@@ -157,7 +163,7 @@ footer ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../images/abstractBackground.jpg);
+    background-image: url("../images/heroimage.jpeg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -168,9 +174,9 @@ footer ul {
 }
 #hero a,
 .card a {
-    background-color: white;
-    color: rgb(22, 137, 225);
-    border: 2px solid rgb(22, 137, 225);
+    background-color: black;
+    color: white;
+    border: #E1A177;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -186,10 +192,12 @@ footer ul {
 #two_cards {
     display: flex;
 }
-
+/****************************************************************************
+  Card styles
+****************************************************************************/
 .card {
-    border: 2px solid rgb(22, 137, 225);
-    color: rgb(22, 137, 225);
+    background-color: #E1A177;
+    color: black;
     margin: 48px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
@@ -202,16 +210,32 @@ footer ul {
     flex: 1;
     margin-top: 0px;
 }
-/****************************************************************************
-  Card styles
-****************************************************************************/
-
+#three_cards h3 {
+    font-family: 'Lobster', cursive;
+}
+#three_cards p {
+    font-family: 'Montserrat', sans-serif;
+}
+#two_cards h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Lobster', cursive;
+}
+#two_cards h3 {
+    font-family: 'Lobster', cursive;
+}
+#two_cards p {
+    font-family: 'Montserrat', sans-serif;
+}
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
 #gallery_container {
     text-align: center;
     padding-top: 40px;
+}
+#gallery_container h2 {
+    font-family: 'Lobster', cursive;
 }
 #gallery_1 {
     display: grid;
@@ -262,7 +286,7 @@ footer ul {
     flex-wrap: wrap;
 }
 #gallery_6 img {
-    height: 400px;
+    height: 200px;
     margin: 10px;
     flex: 1 0 auto;
     object-fit: cover;
