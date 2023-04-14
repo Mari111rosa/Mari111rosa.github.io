@@ -76,10 +76,10 @@ nav {
     grid-area: carousel_area;
 }
 #gallery_container {
-    grid-area: gallery_area;
+    grid-area: two_cards_area;
 }
 #two_cards {
-    grid-area: two_cards_area;
+    grid-area: gallery_area;
 }
 footer {
     grid-area: footer_area; 
@@ -104,12 +104,19 @@ nav img {
 footer {
     display: flex;
     justify-content: center;
+    background-color: black;
+    padding: 40px;
 }
-
+footer img {
+    width: 125px;
+}
+footer p {
+    color: #E1A177;
+    font-size: 20px;
+}
 #nav_links {
     justify-content: center;
 }
-
 #nav_links,
 .social_media {
     display: flex;
@@ -150,10 +157,13 @@ nav h2 {
 }
 
 footer ul {
-    padding: 0;
+    padding: 50px;
 }
-
-
+input [type=email] {
+    width: 100%;
+    height: 10px;
+    box-sizing: border-box;
+}
 /****************************************************************************
   Hero styles
 ****************************************************************************/
@@ -188,8 +198,7 @@ footer ul {
 .card a:hover {
     transform: scale (1.1);
 }
-#three_cards, 
-#two_cards {
+#three_cards {
     display: flex;
 }
 /****************************************************************************
@@ -209,6 +218,9 @@ footer ul {
     font-size: 18px;
     flex: 1;
     margin-top: 0px;
+}
+.card_container {
+    display: flex;
 }
 #three_cards h3 {
     font-family: 'Lobster', cursive;
@@ -232,7 +244,8 @@ footer ul {
 ****************************************************************************/
 #gallery_container {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 #gallery_container h2 {
     font-family: 'Lobster', cursive;
