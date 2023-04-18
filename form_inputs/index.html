@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Form Inputs Exercise</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Form Input Basics</h1>
+        <form>
+            <fieldset>
+                <legend>Form Inputs Exercise</legend>
+
+                <h4>Please fill out & submit form below.</h4>
+                <p>Information -</p>
+
+                <div>
+                    <label for="first_name_id">First Name:</label>
+                    <input type="text" id="first_name_id" name="first_name">
+                </div>
+                <div>
+                    <label for="last_name_id">Last Name:</label>
+                    <input for="text" id="last_name_id" name="last_name">
+                </div>
+                <div>
+                    <label for="city_id">City:</label>
+                    <input for="text" id="city_id" name="city">
+                </div>
+                <div>
+                    <label for="state_id">State:</label>
+                    <input for="text" id="state_id" name="state">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <h2>Radio Inputs</h2>
+                    <p>When does your class start?</p>
+                </div>
+                <div>
+                    <input type="radio" id="morning_class" name="class_time" value="morning">
+                    <label for="rasp_radio">Morning</label>
+                </div>
+                <div>
+                    <input type="radio" id="afternoon_class" name="class_time" value="afternoon">
+                    <label for="afternoon_class">Afternoon</label>
+                </div>
+                <div>
+                    <input type="radio" id="night_class" name="class_time" value="night">
+                    <label for="night_class">Night</label>
+                </div>
+                <br>
+                <div>
+                    <label for="movie_genere_id">
+                        What is your favorite movie genere?
+                    </label>
+                    <select id="movie_genere_id" name="movie_genere">
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="documentaries">Documentaries</option>
+                        <option value="family movies">Family Movies</option>
+                        <option value="scary">Scary</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="button" value="Submit Form">
+                </div>
+        </form>
+    </body>
+</html>
