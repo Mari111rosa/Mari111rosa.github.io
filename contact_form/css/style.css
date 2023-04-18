@@ -1,0 +1,50 @@
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+    ". header_area ."
+    ". main_area .";
+}
+header {
+    grid-area: header_area;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main {
+    grid-area: main_area;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: #FAFAFA;
+}
+form {
+    background-color: lightgray;
+    border: 2px solid #CCCCCC;
+    padding: 36px;
+}
+div label {
+    display: block;
+    margin-bottom: 4px;
+}
+div {
+    margin-bottom: 18px;
+}
+select,
+input, 
+textarea {
+    border-radius: 2px;
+    border: 2px solid lightblue;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: border-box;
+    font-size: 15px;
+}
+input[type=button] {
+    width: auto;
+    padding: 8px;
+    background-color: lightblue;
+    border: 0px;
+    color: white;
+    min-width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
