@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Facebook Signup Form</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="images/Facebook-Logo.png">
+        </header>
+        <main>
+            <form>
+                <h2>Create a new account</h2>
+                <h3>It's quick and easy!</h3>
+                
+                <div class="name_input">
+                        <input required 
+                            type="text" 
+                            id="name_id" 
+                            name="name"
+                            minlength="4"
+                            placeholder="First Name">
+                   
+                        <input required 
+                            type="text" 
+                            id="lastname_id" 
+                            name="last_name"
+                            minlength="4"
+                            maxlength="50"
+                            placeholder="Last Name">
+                </div>
+
+                <div class="contact_input">
+                    <input required 
+                            type="text"
+                            id="contact_id"
+                            name="contact_info"
+                            minlength="10"
+                            maxlength="50"
+                            placeholder="Mobile Number OR email">
+                </div>
+
+                <div class="password_input">
+                    <input required 
+                            type="text"
+                            id="password_id"
+                            name="password"
+                            minlength="8"
+                            maxlength="10"
+                            placeholder="New Password">
+                </div>
+
+                <div class="bday_input">Birthday
+                    <input required
+                        type="date" 
+                        id="date_id" 
+                        name="birthday">
+                </div>
+
+                <div class="gender_selection">
+                    <p>Gender</p>
+                    <div class="female_id">
+                        <input type="radio" id="female_id" name="female" value="female_input" required>
+                        <label for="female_id">Female</label>
+                    </div>
+                    <div class="male_id">
+                        <input type="radio" id="male_id" name="male" value="male_input" required>
+                        <label for="male_id">Male</label>
+                    </div>
+                    <div class="custom_id">
+                        <input type="radio" id="gender_id" name="program" value="gender_input" required>
+                        <label for="gender_id">Custom</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
