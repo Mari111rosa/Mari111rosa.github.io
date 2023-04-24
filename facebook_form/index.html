@@ -53,28 +53,95 @@
                             placeholder="New Password">
                 </div>
 
-                <div class="bday_input">Birthday
-                    <input required
-                        type="date" 
-                        id="date_id" 
-                        name="birthday">
+                <div id="bday">
+                    <label for="bday_id">Birthday?</label>
                 </div>
 
-                <div class="gender_selection">
-                    <p>Gender</p>
-                    <div class="female_id">
-                        <input type="radio" id="female_id" name="female" value="female_input" required>
-                        <label for="female_id">Female</label>
+                <div class="bday_input">
+                    <div class="month_input">
+                        <select required
+                            id="date_id" 
+                            name="bday">
+                            <option value="Month">Aug</option>
+                            <option value="Month">Sept</option>
+                            <option value="Month">Oct</option>
+                            <option value="Month">Nov</option>
+                            <option value="Month">Dec</option>
+                            <option value="Month">Jan</option>
+                            <option value="Month">Feb</option>
+                            <option value="Month">Mar</option>
+                            <option value="Month">Apr</option>
+                            <option value="Month">May</option>
+                            <option value="Month">Jun</option>
+                            <option value="Month">Jul</option>
+                        </select>
                     </div>
-                    <div class="male_id">
-                        <input type="radio" id="male_id" name="male" value="male_input" required>
-                        <label for="male_id">Male</label>
+                    <div class="day_input">
+                        <select required
+                            id="day_id" 
+                            name="bday">
+                            <option value="day">11</option>
+                            <option value="day">12</option>
+                            <option value="day">13</option>
+                            <option value="day">14</option>
+                            <option value="day">15</option>
+                            <option value="day">16</option>
+                            <option value="day">17</option>
+                            <option value="day">18</option>
+                            <option value="day">19</option>
+                            <option value="day">20</option>
+                            <option value="day">21</option>
+                            <option value="day">22</option>
+                            <option value="day">23</option>
+                            <option value="day">24</option>
+                            <option value="day">25</option>
+                            <option value="day">26</option>
+                            <option value="day">27</option>
+                            <option value="day">28</option>
+                            <option value="day">29</option>
+                            <option value="day">30</option>
+                            <option value="day">31</option>
+                        </select>
                     </div>
-                    <div class="custom_id">
-                        <input type="radio" id="gender_id" name="program" value="gender_input" required>
-                        <label for="gender_id">Custom</label>
+                    <div class="year_input">
+                        <select required
+                            id="year_id" 
+                            name="bday">
+                            <option value="year">1998</option>
+                            <option value="year">1999</option>
+                            <option value="year">2000</option>
+                        </select>
                     </div>
                 </div>
+
+                <div id="gender_selection_id">
+                    <label for="gender_selection">Gender?</label>
+                </div>
+                <div class="gender_selection">
+                    <div class="female_id">
+                        <input type="radio" id="female_id" name="female" value="female_input">Female
+                    </div>
+                    <div class="male_id">
+                        <input type="radio" id="male_id" name="male" value="male_input">Male
+                    </div>
+                    <div class="custom_id">
+                        <input type="radio" id="gender_id" name="program" value="gender_input">Custom
+                    </div>
+                </div>
+
+                <section class="learn_more">
+                    <div>
+                        <p> People who use our service may have uploaded your contact information to
+                            Facebook. <a href="#">Learn More.</a>
+                        </p>
+                        <p>
+                            By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy and Cookies
+                            Policy</a>. 
+                            You may receive SMS Notifications from us and can opt out any time.
+                        </p>
+                    </div>
+                </section>
+
                 <div class="submit">
                     <input type="submit" value="Sign Up">
                 </div>
