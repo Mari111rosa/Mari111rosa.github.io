@@ -30,9 +30,10 @@ h1 {
     margin-bottom: 0;
 }
 
-h4 {
+h2 {
     font-size: 30px;
     margin-top: 4px;
+    color: black;
 }
 
 a {
@@ -165,10 +166,15 @@ footer ul {
     background-size: cover;
     background-attachment: fixed;
     color: white;
+
 /****************************************************************************
   Button styles
 ****************************************************************************/
 }
+#hero p {
+    color: #638041;
+}
+
 #hero a,
 .card a {
     background-color: #faedcd;
@@ -210,13 +216,13 @@ footer ul {
     font-size: 18px;
     flex: 1;
     margin-top: 0px;
-    color:#d4a373;
+    color: black;
 }
 .card_container {
     display: flex;
 }
 #three_cards h3 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #three_cards p {
     font-family: 'Montserrat', sans-serif;
@@ -224,12 +230,12 @@ footer ul {
 #two_cards h2 {
     text-align: center;
     padding-top: 40px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #638041;
     text-decoration: underline;
 }
 #two_cards h3 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #two_cards p {
     font-family: 'Montserrat', sans-serif;
