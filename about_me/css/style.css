@@ -83,14 +83,6 @@ nav {
 footer {
     grid-area: footer_area; 
 }
-input {
-    width: 50%;
-    height: 30px;
-    padding: 0px 0px;
-    margin: 50px 0px;
-    font-family: lobster;
-    border: 4px solid #E1A177;
-}
 /****************************************************************************
   Grid styles
 ****************************************************************************/
@@ -102,26 +94,18 @@ nav {
     align-items: center;
     display: flex;
     padding: 0 24px;
-    background-color: black;
+    background-color: #ccd5ae;
 }
 nav img {
     width: 150px;
 }
 footer {
     display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 40px;
+   justify-content: center;
+    background-color: #ccd5ae;
+    padding: 20px;
 }
-footer img {
-    width: 125px;
-}
-footer p {
-    color: #61714d;
-    font-size: 20px;
-    width: 50%;
-    position: absolute;
-}
+
 #nav_links {
     justify-content: center;
 }
@@ -143,13 +127,13 @@ nav .social_media {
 
 .social_media i {
     font-size: 20px;
-    color:#61714d;
+    color: #fefae0;
 }
 
 nav,
 nav a,
 footer a {
-   color: #61714d;
+   color: #fefae0;
 }
 
 nav a:hover,
@@ -176,7 +160,7 @@ footer ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../images/heroimage.jpeg");
+    background-image: url("../images/");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -187,9 +171,8 @@ footer ul {
 }
 #hero a,
 .card a {
-    background-color: black;
-    color: white;
-    border: #E1A177;
+    background-color: #faedcd;
+    color: #638041;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -211,8 +194,8 @@ footer ul {
   Card styles
 ****************************************************************************/
 .card {
-    background-color: #c2a887;
-    color: black;
+    background-color: #e9edc9;
+    color: #638041;
     margin: 48px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
@@ -227,6 +210,7 @@ footer ul {
     font-size: 18px;
     flex: 1;
     margin-top: 0px;
+    color:#d4a373;
 }
 .card_container {
     display: flex;
@@ -241,12 +225,63 @@ footer ul {
     text-align: center;
     padding-top: 40px;
     font-family: 'Lobster', cursive;
+    color: #638041;
+    text-decoration: underline;
 }
 #two_cards h3 {
     font-family: 'Lobster', cursive;
 }
 #two_cards p {
     font-family: 'Montserrat', sans-serif;
+}
+/****************************************************************************
+  Form styles
+****************************************************************************/
+#grid_container {
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+    ". header_area ."
+    ". main_area .";
+}
+header {
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main {
+    grid-area: main_area;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form {
+        background-color: #638041;
+        border: 2px solid #CCCCCC;
+        padding: 36px;
+}
+div label {
+    display: block;
+    margin-bottom: 7px;
+}
+div {
+    margin-bottom: 20px;
+}
+select,
+input, 
+textarea {
+    border-radius: 2px;
+    border: 2px solid #ccd5ae;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: border-box;
+    font-size: 15px;
+}
+input[type=submit] {
+    width: auto;
+    padding: 8px;
+    background-color: #faedcd;
+    border: 0px;
+    color: #638041;
+    min-width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /****************************************************************************
@@ -332,7 +367,8 @@ footer ul {
             "carousel_area"
             "gallery_area"
             "two_cards_area"
-            "footer_area";
+            "footer_area"
+            "#grid_container";
     }
     nav {
         flex-direction: column;
@@ -340,6 +376,10 @@ footer ul {
     #three_cards, 
     #two_cards {
         flex-direction: column;
+    }
+    form {
+        align-items: center;
+        margin: 36px 24px 0px;
     }
     .card {
         align-items: center;
