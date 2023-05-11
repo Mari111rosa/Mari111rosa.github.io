@@ -1,6 +1,5 @@
 /* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap');
 /*****************************************************************************
   Heading, Link, and Misc. Styles
 *****************************************************************************/
@@ -16,11 +15,11 @@ h1,
 h2,
 h3,
 a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;;
 }
 h4,
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 h1 img {
     width: 200px
@@ -222,20 +221,20 @@ footer ul {
     display: flex;
 }
 #three_cards h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 #three_cards p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 #two_cards h2 {
     text-align: center;
     padding-top: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Wix Madefor Display', sans-serif;
     color: #638041;
     text-decoration: underline;
 }
 #two_cards h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Wix Madefor Display', sans-serif;
 }
 #two_cards p {
     font-family: 'Montserrat', sans-serif;
@@ -252,11 +251,11 @@ footer ul {
 header {
     text-align: center;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 main {
     grid-area: main_area;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 form {
         background-color: #638041;
@@ -287,7 +286,7 @@ input[type=submit] {
     border: 0px;
     color: #638041;
     min-width: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
 /****************************************************************************
