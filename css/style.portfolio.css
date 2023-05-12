@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+}
+/****************************************************************************
+  Grid area styles
+****************************************************************************/
+nav {
+    grid-area: nav_area;
+}
+#hero {
+    grid-area: hero_area;
+}
+#three_cards {
+    grid-area: three_cards_area;
+}
+.about_me_card {
+    grid-area: about_me_card_area; 
+}
+#form_container {
+    grid-area: form_container_area;
+}
+footer {
+    grid-area: footer_area; 
+}
+/*****************************************************************************
+ Nav Styles
+*****************************************************************************/
+nav {
+    align-items: center;
+    display: flex;
+    padding: 0 50px;
+    background-color: #ccd5ae;
+}
+nav ul,
+nav h2 {
+    flex: 1;
+}
+a {
+    text-decoration: none;
+}
+#nav_links,
+.social_media {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav_links li,
+.social_media li {
+    padding: 0 5px;
+    justify-content: center;
+}
+
+.social_media i {
+    font-size: 20px;
+    color: #fefae0;
+}
+
+nav,
+nav a,
+footer a {
+   color: #fefae0;
+   font-family: 'Poppins', sans-serif;
+}
+nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+/*****************************************************************************
+ Hero Styles
+*****************************************************************************/
+#hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hero h2, p, a {
+    color: #638041;
+    font-family: 'Poppins', sans-serif;
+
+}
+#hero a,
+.card a {
+    background-color: #faedcd;
+    color: #638041;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 12px;
+    min-width: 150px;
+}
+#hero a:hover,
+.card a:hover {
+    border: 2px solid #638041;
+    transition: 0.5s;
+}
+/*****************************************************************************
+ Three cards Styles
+*****************************************************************************/
+#three_cards {
+    display: flex;
+}
+#three_cards h3 {
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    background-color: #e9edc9;
+    color: #638041;
+    margin: 48px 24px 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0px;
+    flex: 1;
+    flex-direction: column;
+}
+.card p {
+    font-size: 15px;
+    flex: 1;
+    margin-top: 0px;
+    color: black;
+}
+.card a {
+   background-color: #faedcd;
+   color: #638041;
+}
+/*****************************************************************************
+About Me Card Styles
+*****************************************************************************/
+.about_me_card {
+    display: flex;
+}
+.about_me_card {
+    background-color: #e9edc9;
+    margin: 48px 24px 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0px;
+    flex: 1;
+    flex-direction: column;
+}
+.about_me_card img {
+    width: 80%;
+}
+.about_me_card h3 {
+    color: #638041;
+    font-family: 'Poppins', sans-serif;
+}
+.about_me_card p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+/*****************************************************************************
+Form Styles
+*****************************************************************************/
+#form_container {
+    
+    grid-template-areas:
+    ". header_area ."
+    ". main_area .";
+    padding: 0 50px;
+}
+form {
+    background-color: #638041;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+}
+#form_container main {
+    font-family: 'Poppins', sans-serif;
+}
+#form_container header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+#form_container div {
+    padding: 10px;
+}
+select,
+input, 
+textarea {
+    border-radius: 2px;
+    border: 2px solid #ccd5ae;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: border-box;
+    font-size: 15px;
+}
+input[type=submit] {
+    width: auto;
+    padding: 8px;
+    background-color: #faedcd;
+    border: 0px;
+    color: #638041;
+    min-width: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+/*****************************************************************************
+Footer Styles
+*****************************************************************************/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ccd5ae;
+    padding: 15px;
+    margin-top: 20px;
+}
+/****************************************************************************
+  Media Query - Mobile Breakpoint
+****************************************************************************/
+@media screen and (max-width: 800px) {
+    #site_grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nav_area"
+            "hero_area"
+            "three_cards_area"
+            "footer_area"
+            ".about_me_card_area"
+            "#form_container";
+    }
+    nav {
+        flex-direction: column;
+    }
+    #three_cards {
+        flex-direction: column;
+    }
+    form {
+        align-items: center;
+        margin: 36px 24px 0px;
+    }
+    .about_me_card {
+        align-items: center;
+        margin: 36px 24px 0px; 
+    }
+}
