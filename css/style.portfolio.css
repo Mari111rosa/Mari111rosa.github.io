@@ -31,7 +31,7 @@ nav {
     align-items: center;
     display: flex;
     padding: 0 50px;
-    background-color: #ccd5ae;
+    background-color: #a6a2a2;
 }
 nav ul,
 nav h2 {
@@ -111,8 +111,8 @@ footer a:hover {
     font-family: 'Poppins', sans-serif;
 }
 .card {
-    background-color: #e9edc9;
-    color: #638041;
+    background-color: #a6a2a2;
+    color: #FBFBF2;
     margin: 48px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
@@ -137,24 +137,26 @@ About Me Card Styles
     display: flex;
 }
 .about_me_card {
-    background-color: #e9edc9;
-    margin: 48px 24px 24px;
-    padding: 12px 12px 24px;
+    background-color: #A6A2A2;
+    margin: 50px auto;
+    width: 500px;
     text-align: center;
-    box-shadow: 4px 4px 8px 0px;
     flex: 1;
     flex-direction: column;
+    padding: 30px;
 }
 .about_me_card img {
-    width: 80%;
+    width: 60%;
+   
 }
 .about_me_card h3 {
     color: #638041;
     font-family: 'Poppins', sans-serif;
 }
 .about_me_card p {
-    color: black;
+    color: #FBFBF2;
     font-family: 'Poppins', sans-serif;
+    text-align: left;
 }
 /*****************************************************************************
 Form Styles
@@ -164,17 +166,20 @@ Form Styles
     grid-template-areas:
     ". header_area ."
     ". main_area .";
-    padding: 0 50px;
 }
 form {
-    background-color: #638041;
+    background-color:  #a6a2a2;
     border: 2px solid #CCCCCC;
     border-radius: 5px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+    width: 500px;
+    margin: 0px auto;
+    color: #FBFBF2; 
 }
 #form_container main {
     font-family: 'Poppins', sans-serif;
+    padding: 30px;
 }
 #form_container header {
     font-family: 'Poppins', sans-serif;
@@ -192,6 +197,7 @@ textarea {
     border-radius: 10px;
     border-radius: border-box;
     font-size: 15px;
+    
 }
 input[type=submit] {
     width: auto;
@@ -208,7 +214,7 @@ Footer Styles
 footer {
     display: flex;
     justify-content: center;
-    background-color: #ccd5ae;
+    background-color:  #a6a2a2;
     padding: 15px;
     margin-top: 20px;
 }
