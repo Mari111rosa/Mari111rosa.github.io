@@ -69,6 +69,39 @@ footer a:hover {
     text-decoration: underline;
 }
 /*****************************************************************************
+ SUBNav Styles
+*****************************************************************************/
+.dropdown_container {
+    position: relative;
+   text-align: center;
+}
+.dropdown_menu {
+    background-color: #9DACD5;
+    position: absolute;
+    flex-direction: column;
+    width: 150px;
+   padding: 10px; 
+   
+    list-style-type: none;
+    visibility: hidden;
+    transition: 
+        opacity 0.05s,
+        visibility 0.05s,
+        top 0.05s;
+}
+.dropdown_container:hover .dropdown_menu {
+    opacity: 1;
+    visibility: visible; 
+    top: 100%;
+}
+#nav_button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+}
+/*****************************************************************************
  Hero Styles
 *****************************************************************************/
 #hero {
